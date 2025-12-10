@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西紅柿炒雞蛋 (トマトと卵の炒め物) | ひとり中華</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+TC:wght@600;900&family=Zen+Maru+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="rogo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #fdfaf6;
+        }
+        .font-catchy {
+             /* 漢字フォント(Noto Serif TC)を優先適用 */
+            font-family: 'Noto Serif TC', 'Zen Maru Gothic', serif;
+        }
+        .text-shadow-dark {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .banner-image {
+            width: 100%;
+            height: 20vh;
+            object-fit: cover;
+            display: block;
+        }
+        .page-menu .nav-menu-link {
+            color: #F97316;
+        }
+    </style>
+</head>
+<body data-recipe-id="tomato-01" class="min-h-screen text-zinc-800 page-menu">
+    <div class="min-h-screen flex flex-col">
+
+        <div class="relative">
+            <img src="banner.jpg" alt="メニューバナー" class="banner-image">
+            <header class="absolute top-0 left-0 w-full z-10 p-4 md:p-6">
+                <div class="container mx-auto flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <img src="rogo.jpg" alt="サイトロゴ" class="h-12 w-12 md:h-16 md:w-16 object-contain bg-white rounded-full p-1 shadow-lg">
+                        <span class="hidden sm:block text-2xl font-bold text-white text-shadow-dark">ひとり中華</span>
+                    </a>
+                    <nav class="ml-auto mr-12 md:mr-24 lg:mr-32">
+                        <ul class="flex space-x-10 md:space-x-20">
+                            <li><a href="menu.html" class="text-2xl font-bold text-white hover:text-orange-200 transition duration-300 text-shadow-dark nav-menu-link">MENU</a></li>
+                            <li><a href="others.html" class="text-2xl font-bold text-white hover:text-orange-200 transition duration-300 text-shadow-dark nav-others-link">OTHERS</a></li>
+                            <li class="flex items-center space-x-2 text-white font-bold bg-black/20 px-3 py-1 rounded-full backdrop-blur-sm">
+                                <a href="recipe-tomato.html" class="text-orange-300 text-sm">JP</a>
+                                <span class="text-xs opacity-50">|</span>
+                                <a href="recipe-tomato_kr.html" class="hover:text-orange-300 transition text-sm">KR</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <main class="flex-grow container mx-auto p-4 md:p-8">
+            <div class="flex flex-col md:flex-row gap-8">
+
+                <div class="w-full md:w-1/3">
+                    <img src="Tomato08.jpg" alt="완성 사진" class="w-full h-80 object-cover rounded-lg shadow-lg mb-6 recipe-image-clickable cursor-pointer transition-transform duration-300 hover:scale-105">
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+                        <h2 class="text-2xl font-bold mb-4 border-b-2 border-orange-400 pb-2">レシピ情報</h2>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-clock w-6 text-center text-orange-500 mr-2"></i>
+                                <span class="font-bold">調理時間：</span>
+                                <span class="ml-auto">約15分</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-star w-6 text-center text-orange-500 mr-2"></i>
+                                <span class="font-bold">難易度：</span>
+                                <div class="ml-auto">
+                                    <i class="fa-solid fa-star text-orange-400"></i>
+                                    <i class="fa-solid fa-star text-gray-300"></i>
+                                    <i class="fa-solid fa-star text-gray-300"></i>
+                                    <i class="fa-solid fa-star text-gray-300"></i>
+                                    <i class="fa-solid fa-star text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 class="text-2xl font-bold mb-4 border-b-2 border-orange-400 pb-2">材料</h2>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between"><span>トマト</span><span>2個</span></li>
+                            <li class="flex justify-between"><span>卵</span><span>2個</span></li>
+                            <li class="flex justify-between"><span>小ねぎ</span><span>適量</span></li>
+                            <li class="flex justify-between"><span>塩</span><span>適量</span></li>
+                            <li class="flex justify-between"><span>酢</span><span>少々</span></li>
+                            <li class="flex justify-between"><span>砂糖</span><span>お好みで</span></li>
+                            <li class="flex justify-between"><span>油</span><span>適量</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-2/3">
+                    <h1 class="font-catchy text-4xl md:text-5xl font-bold text-zinc-800 tracking-wide">
+                        西紅柿炒雞蛋
+                    </h1>
+                    <div class="flex items-center mt-4 mb-6">
+                        <button id="like-btn" class="group flex items-center space-x-2 bg-white border-2 border-orange-100 px-4 py-2 rounded-full shadow-sm hover:border-orange-400 hover:bg-orange-50 transition duration-300 cursor-pointer">
+                            <i id="heart-icon" class="fa-regular fa-heart text-2xl text-gray-400 group-hover:text-orange-500 transition-colors"></i>
+                            <span class="font-bold text-gray-600 group-hover:text-orange-600">いいね！</span>
+                        </button>
+                        <span id="like-count" class="ml-3 text-xl font-bold text-orange-500 opacity-0 transition-opacity duration-500">
+                            0
+                        </span>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6">トマトと卵の炒め物</p>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 class="text-3xl font-bold mb-6 border-b-2 border-orange-400 pb-2">作り方</h2>
+                        <ol class="list-decimal list-inside space-y-8">
+                            
+                            <li class="text-lg">
+                                <strong>下準備：</strong><br>
+                                トマトの上部に十字の切り込みを入れ、熱湯に約5分間浸します。その間にボウルに卵を2個割り入れ、塩少々と酢（臭み消し用）を加えてよく混ぜ合わせます。トマトを取り出して皮をむき、大きめにカットします。
+                                <div class="flex flex-wrap gap-4 mt-4">
+                                    <img src="Tomato01.jpg" alt="トマトの湯剥き準備" class="w-40 h-32 object-cover rounded shadow recipe-image-clickable cursor-pointer transition-transform duration-300 hover:scale-105">
+                                    <img src="Tomato02.jpg" alt="卵を溶く" class="w-40 h-32 object-cover rounded shadow recipe-image-clickable cursor-pointer transition-transform duration-300 hover:scale-105">
+                                    <img src="Tomato03.jpg" alt="トマトをカット" class="w-40 h-32 object-cover rounded shadow recipe-image-clickable cursor-pointer transition-transform duration-300 hover:scale-105">
+                                </div>
+                            </li>
+                            
+                            <li class="text-lg">
+                                <strong>卵を炒める：</strong><br>
+                                フライパンに油を引いて熱し、卵液を流し入れます。ふんわりとなるように混ぜながら炒め、半熟程度になったら一度お皿に取り出しておきます。
+                                <div class="flex flex-wrap gap-4 mt-4">
+                                    <img src="Tomato04.jpg" alt="卵を炒める" class="w-40 h-32 object-cover rounded shadow recipe-image-clickable cursor-pointer transition-transform duration-300 hover:scale-105">
+                                    <img src="Tomato05.jpg" alt="取り出した卵" class="w-40 h-32 object-cover rounded shadow recipe-image-clickable cursor-pointer transition-transform duration-300 hover:scale-105">
+                                </div>
+                            </li>
+
+                            <li class="text-lg">
+                                <strong>仕上げ：</strong><br>
+                                同じフライパンで小ねぎ（白い部分）を軽く炒め、トマトを加えて炒めます。途中で塩を振り、1〜2分経ったら卵を戻し入れて混ぜ合わせます。お好みで砂糖を加えて酸味を調整してください。最後に小ねぎ（緑の部分）を散らして完成です。
+                                <div class="flex flex-wrap gap-4 mt-4">
+                                    <img src="Tomato06.jpg" alt="トマトを炒める" class="w-40 h-32 object-cover rounded shadow recipe-image-clickable cursor-pointer transition-transform duration-300 hover:scale-105">
+                                    <img src="Tomato07.jpg" alt="卵と合わせる" class="w-40 h-32 object-cover rounded shadow recipe-image-clickable cursor-pointer transition-transform duration-300 hover:scale-105">
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="p-4 text-center text-sm text-gray-600 bg-white shadow-inner mt-8">
+            <p>&copy; 2025 ひとり中華 All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden cursor-pointer">
+        <img id="modalImage" src="" alt="拡大画像" class="max-w-[60vw] max-h-[60vh] object-contain">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const clickableImages = document.querySelectorAll('.recipe-image-clickable');
+
+            clickableImages.forEach(img => {
+                img.addEventListener('click', (event) => {
+                    event.stopPropagation(); 
+                    modal.classList.remove('hidden');
+                    modalImg.src = img.src;
+                });
+            });
+
+            modal.addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
+        });
+    </script>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getDatabase, ref, onValue, runTransaction } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyAI4NxJtRtAMzDS4KhP4InKp_2svkVeL60",
+        authDomain: "hitori-chuka.firebaseapp.com",
+        databaseURL: "https://hitori-chuka-default-rtdb.firebaseio.com",
+        projectId: "hitori-chuka",
+        storageBucket: "hitori-chuka.appspot.com",
+        messagingSenderId: "373036320090",
+        appId: "1:373036320090:web:4ff81af4d7f34fe94d1f63"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    const recipeId = document.body.getAttribute('data-recipe-id'); 
+    const likeRef = ref(db, 'likes/' + recipeId);
+
+    const likeBtn = document.getElementById('like-btn');
+    const likeCount = document.getElementById('like-count');
+    const heartIcon = document.getElementById('heart-icon');
+
+    onValue(likeRef, (snapshot) => {
+        const data = snapshot.val();
+        const count = data ? data : 0;
+        
+        likeCount.innerText = count;
+        likeCount.classList.remove('opacity-0'); 
+    });
+
+    likeBtn.addEventListener('click', () => {
+        runTransaction(likeRef, (currentLikes) => {
+            return (currentLikes || 0) + 1;
+        }).then(() => {
+            heartIcon.classList.add('fa-solid', 'text-orange-500', 'fa-bounce');
+            heartIcon.classList.remove('fa-regular', 'text-gray-400');
+            setTimeout(() => {
+                heartIcon.classList.remove('fa-bounce');
+            }, 500);
+        }).catch((error) => {
+            console.error("저장 실패:", error);
+            alert("연결 상태를 확인해주세요.");
+        });
+    });
+</script>
+</body>
+</html>
