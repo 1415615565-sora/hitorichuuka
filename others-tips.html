@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>料理のコツ | ひとり中華</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Zen+Maru+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="rogo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #fdfaf6;
+        }
+        .font-catchy {
+            font-family: 'Zen Maru Gothic', serif;
+        }
+        .text-shadow-dark {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .banner-image {
+            width: 100%;
+            height: 20vh;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-zinc-800">
+    <div class="min-h-screen flex flex-col">
+
+        <div class="relative">
+            <img src="banner.jpg" alt="バナー" class="banner-image">
+            <header class="absolute top-0 left-0 w-full z-10 p-4 md:p-6">
+                <div class="container mx-auto flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <img src="rogo.jpg" alt="ロゴ" class="h-12 w-12 md:h-16 md:w-16 object-contain bg-white rounded-full p-1 shadow-lg">
+                        <span class="hidden sm:block text-2xl font-bold text-white text-shadow-dark">ひとり中華</span>
+                    </a>
+                    <nav class="ml-auto mr-12 md:mr-24 lg:mr-32">
+                        <ul class="flex space-x-10 md:space-x-20">
+                            <li><a href="menu.html" class="text-2xl font-bold text-white hover:text-orange-200 transition duration-300 text-shadow-dark">MENU</a></li>
+                            <li><a href="others.html" class="text-2xl font-bold text-orange-400 hover:text-orange-200 transition duration-300 text-shadow-dark">OTHERS</a></li>
+                            
+                            <li class="flex items-center space-x-2 text-white font-bold bg-black/20 px-3 py-1 rounded-full backdrop-blur-sm">
+                                <a href="others-tips.html" class="text-orange-300 text-sm">JP</a>
+                                <span class="text-xs opacity-50">|</span>
+                                <a href="others-tips_kr.html" class="hover:text-orange-300 transition text-sm">KR</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <main class="flex-grow container mx-auto p-4 md:p-8">
+            <div class="flex flex-col md:flex-row gap-8">
+
+                <div class="w-full md:w-5/6">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl font-bold font-catchy text-zinc-800 mb-4">失敗しないための5つのアドバイス</h2>
+                        <p class="text-gray-600">この基本的なルールを守るだけで、料理の味がぐっと良くなります。</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4 hover:shadow-lg transition duration-300">
+                            <div class="flex-shrink-0 bg-orange-100 p-3 rounded-full text-orange-600">
+                                <i class="fa-solid fa-temperature-high text-2xl w-8 h-8 flex items-center justify-center"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 font-catchy text-zinc-800">1. 十分な予熱は必須</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    油を入れる前にまず鍋を熱してください。油を入れた後もすぐ食材を入れず、油の温度が上がるまで少し待ちましょう。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4 hover:shadow-lg transition duration-300">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full text-blue-600">
+                                <i class="fa-solid fa-droplet-slash text-2xl w-8 h-8 flex items-center justify-center"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 font-catchy text-zinc-800">2. 油跳ねを防ぐ</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    食材に水気が残っていると、油に入れる際に跳ねやすくなります。水気をしっかり切るか、食材の量が油を覆うほど十分であれば跳ねにくくなります。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4 hover:shadow-lg transition duration-300">
+                            <div class="flex-shrink-0 bg-green-100 p-3 rounded-full text-green-600">
+                                <i class="fa-solid fa-utensils text-2xl w-8 h-8 flex items-center justify-center"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 font-catchy text-zinc-800">3. 味見は恥ずかしくない</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    野菜は長時間炒める必要はありません。色で火の通り具合を判断するのはコツが要るので、一番確実で簡単な方法は、直接味見をすることです。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4 hover:shadow-lg transition duration-300">
+                            <div class="flex-shrink-0 bg-red-100 p-3 rounded-full text-red-600">
+                                <i class="fa-solid fa-fire text-2xl w-8 h-8 flex items-center justify-center"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 font-catchy text-zinc-800">4. 火加減の美学</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    火加減を学びましょう。通常、料理が完成に近づいたら中火に落とします。火加減に注意しないと、あっという間に焦げてしまいます。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4 hover:shadow-lg transition duration-300">
+                            <div class="flex-shrink-0 bg-yellow-100 p-3 rounded-full text-yellow-600">
+                                <i class="fa-solid fa-spoon text-2xl w-8 h-8 flex items-center justify-center"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 font-catchy text-zinc-800">5. 塩は控えめに</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    塩は入れすぎるより足りないくらいが良いです（寧缺毋濫）。入れる時に手が震えて入れすぎないよう、落ち着いて少しずつ味を調えましょう。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <aside class="w-full md:w-1/6">
+                    <div class="bg-white rounded-lg shadow-lg p-6 sticky top-8"> 
+                        <ul class="space-y-4">
+                            <li>
+                                <a href="others.html" class="block text-zinc-700 hover:text-orange-600 hover:underline text-lg">
+                                    作者の一言
+                                </a>
+                            </li>
+                            <li>
+                                <a href="others-seasoning.html" class="block text-zinc-700 hover:text-orange-600 hover:underline text-lg">
+                                    使用調味料
+                                </a>
+                            </li>
+                            <li>
+                                <a href="others-tools.html" class="block text-zinc-700 hover:text-orange-600 hover:underline text-lg">
+                                    使用した調理器具
+                                </a>
+                            </li>
+                            <li>
+                                <a href="others-tips.html" class="block font-bold text-orange-600 hover:underline text-lg">
+                                    料理のコツ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+        </main>
+
+        <footer class="p-4 text-center text-sm text-gray-600 bg-white shadow-inner mt-8">
+            <p>&copy; 2025 ひとり中華 All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

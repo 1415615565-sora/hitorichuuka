@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작가의 한마디 | 나홀로 중식</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="rogo.jpg" type="image/jpeg">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #fdfaf6;
+        }
+        .font-catchy {
+            font-family: 'Gowun Dodum', serif;
+        }
+        .text-shadow-dark {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .banner-image {
+            width: 100%;
+            height: 20vh;
+            object-fit: cover;
+            display: block;
+        }
+        .prose-text-area p {
+            line-height: 2.0;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-zinc-800">
+    <div class="min-h-screen flex flex-col">
+
+        <div class="relative">
+            <img src="banner.jpg" alt="배너" class="banner-image">
+            <header class="absolute top-0 left-0 w-full z-10 p-4 md:p-6">
+                <div class="container mx-auto flex items-center">
+                    <a href="index_kr.html" class="flex items-center space-x-2">
+                        <img src="rogo.jpg" alt="로고" class="h-12 w-12 md:h-16 md:w-16 object-contain bg-white rounded-full p-1 shadow-lg">
+                        <span class="hidden sm:block text-2xl font-bold text-white text-shadow-dark font-catchy">나홀로 중식</span>
+                    </a>
+                    <nav class="ml-auto mr-4 md:mr-12 lg:mr-32">
+                        <ul class="flex items-center space-x-6 md:space-x-10">
+                            <li><a href="menu_kr.html" class="text-xl md:text-2xl font-bold text-white hover:text-orange-200 transition duration-300 text-shadow-dark">MENU</a></li>
+                            <li><a href="others_kr.html" class="text-xl md:text-2xl font-bold text-orange-400 hover:text-orange-200 transition duration-300 text-shadow-dark">OTHERS</a></li>
+                            
+                            <li class="flex items-center space-x-2 text-white font-bold bg-black/20 px-3 py-1 rounded-full backdrop-blur-sm">
+                                <a href="others.html" class="hover:text-orange-300 transition text-sm">JP</a>
+                                <span class="text-xs opacity-50">|</span>
+                                <a href="others_kr.html" class="text-orange-300 text-sm">KR</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <main class="flex-grow container mx-auto p-4 md:p-8">
+            <div class="flex flex-col md:flex-row gap-8">
+
+                <div class="w-full md:w-5/6">
+                    <section>
+                        <h2 class="font-catchy text-3xl md:text-4xl font-bold text-center mb-8">
+                            작가의 한마디
+                        </h2>
+                        
+                        <div class="bg-white rounded-lg shadow-lg p-6 md:p-10 space-y-6 prose-text-area">
+                            <p class="text-base md:text-lg text-zinc-800">
+                                저는 지금 혼자 살고 있습니다. 예전에는 냉동식품이나 라면 등 건강하지 못한 식습관을 가지고 있었지만, 나이가 들면서 건강을 위해 조금씩 신경 쓰기 시작했습니다.
+                            </p>
+                            <p class="text-base md:text-lg text-zinc-800">
+                               하지만 요리 경험이 별로 없었고, 시간을 많이 들이는 것도 귀찮았습니다. 동시에 식비도 아끼고 싶었죠... 무엇을 해 먹을지 고민하던 때, 중국에 있을 때 자주 먹었던 가정식이 떠올랐습니다. 이것들은 실제로 만드는 데 시간이 별로 걸리지 않고, 재료를 구하기도 비교적 쉽습니다. 무엇보다 맛있고, 여러분이 상상하는 화려한 '중화요리'의 이미지와는 조금 다를지도 모릅니다.
+                            </p>
+                            <p class="text-base md:text-lg text-zinc-800">
+                                여러분도 꼭 직접 만들어서 중국 가정식의 소박한 맛을 느껴보셨으면 좋겠습니다.
+                            </p>
+
+                            <div class="flex justify-center pt-4">
+                                <img src="author.jpg" alt="작가 이미지" class="rounded-lg shadow-lg max-w-full md:max-w-lg object-contain">
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+
+                <aside class="w-full md:w-1/6">
+                    <div class="bg-white rounded-lg shadow-lg p-6 sticky top-8"> 
+                        <ul class="space-y-4">
+                            <li>
+                                <a href="others_kr.html" class="block font-bold text-orange-600 hover:underline text-lg font-catchy">
+                                    작가의 한마디
+                                </a>
+                            </li>
+                            <li>
+                                <a href="others-seasoning_kr.html" class="block text-zinc-700 hover:text-orange-600 hover:underline text-lg font-catchy">
+                                    사용 조미료
+                                </a>
+                            </li>
+                            <li>
+                                <a href="others-tools_kr.html" class="block text-zinc-700 hover:text-orange-600 hover:underline text-lg font-catchy">
+                                    사용 도구
+                                </a>
+                            </li>
+                            <li>
+                                <a href="others-tips_kr.html" class="block text-zinc-700 hover:text-orange-600 hover:underline text-lg font-catchy">
+                                    요리 팁
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+        </main>
+
+        <footer class="p-4 text-center text-sm text-gray-600 bg-white shadow-inner mt-8">
+            <p>&copy; 2025 Hitori Chuka All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

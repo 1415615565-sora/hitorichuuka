@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용 조미료 | 나홀로 중식</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="rogo.jpg" type="image/jpeg">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #fdfaf6;
+        }
+        .font-catchy {
+            font-family: 'Gowun Dodum', serif;
+        }
+        .text-shadow-dark {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .banner-image {
+            width: 100%;
+            height: 20vh;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-zinc-800">
+    <div class="min-h-screen flex flex-col">
+
+        <div class="relative">
+            <img src="banner.jpg" alt="배너" class="banner-image">
+            <header class="absolute top-0 left-0 w-full z-10 p-4 md:p-6">
+                <div class="container mx-auto flex items-center">
+                    <a href="index_kr.html" class="flex items-center space-x-2">
+                        <img src="rogo.jpg" alt="로고" class="h-12 w-12 md:h-16 md:w-16 object-contain bg-white rounded-full p-1 shadow-lg">
+                        <span class="hidden sm:block text-2xl font-bold text-white text-shadow-dark font-catchy">나홀로 중식</span>
+                    </a>
+                    <nav class="ml-auto mr-4 md:mr-12 lg:mr-32">
+                        <ul class="flex items-center space-x-6 md:space-x-10">
+                            <li><a href="menu_kr.html" class="text-xl md:text-2xl font-bold text-white hover:text-orange-200 transition duration-300 text-shadow-dark">MENU</a></li>
+                            <li><a href="others_kr.html" class="text-xl md:text-2xl font-bold text-orange-400 hover:text-orange-200 transition duration-300 text-shadow-dark">OTHERS</a></li>
+                            
+                            <li class="flex items-center space-x-2 text-white font-bold bg-black/20 px-3 py-1 rounded-full backdrop-blur-sm">
+                                <a href="others-seasoning.html" class="hover:text-orange-300 transition text-sm">JP</a>
+                                <span class="text-xs opacity-50">|</span>
+                                <a href="others-seasoning_kr.html" class="text-orange-300 text-sm">KR</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <main class="flex-grow container mx-auto p-4 md:p-8">
+            <div class="flex flex-col md:flex-row gap-8">
+
+                <div class="w-full md:w-5/6">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold font-catchy text-zinc-800 mb-4">나홀로 중식의 비밀 병기</h2>
+                        <p class="text-gray-600">이 5가지 조미료만 있으면, 집에서도 완벽한 중국 가정식을 만들 수 있습니다.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                            <div class="h-64 overflow-hidden bg-gray-100 flex items-center justify-center">
+                                <img src="jijing.jpg" alt="치킨 파우더" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 font-catchy text-orange-600">치킨 파우더</h3>
+                                <p class="text-sm text-gray-500 mb-3 font-bold">Lee Kum Kee | 이금기</p>
+                                <p class="text-gray-600 leading-relaxed">중식의 마법 가루입니다. 닭 육수를 베이스로 하여 감칠맛을 폭발시켜 줍니다.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                            <div class="h-64 overflow-hidden bg-gray-100 flex items-center justify-center">
+                                <img src="you.jpg" alt="식용유" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 font-catchy text-orange-600">식용유</h3>
+                                <p class="text-sm text-gray-500 mb-3 font-bold">Soybean Oil | 콩기름</p>
+                                <p class="text-gray-600 leading-relaxed">높은 온도에서 볶는 중식에는 발연점이 높은 콩기름이 적합합니다.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                            <div class="h-64 overflow-hidden bg-gray-100 flex items-center justify-center">
+                                <img src="yan.jpg" alt="맛소금" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 font-catchy text-orange-600">맛소금</h3>
+                                <p class="text-sm text-gray-500 mb-3 font-bold">Seasoned Salt</p>
+                                <p class="text-gray-600 leading-relaxed">MSG가 살짝 포함된 소금입니다. 입자가 고와서 간이 빨리 배어듭니다.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                            <div class="h-64 overflow-hidden bg-gray-100 flex items-center justify-center">
+                                <img src="tang.jpg" alt="설탕" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 font-catchy text-orange-600">설탕</h3>
+                                <p class="text-sm text-gray-500 mb-3 font-bold">White Sugar | 백설탕</p>
+                                <p class="text-gray-600 leading-relaxed">매운맛을 중화시키고 볶음 요리에 윤기를 더해줍니다.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                            <div class="h-64 overflow-hidden bg-gray-100 flex items-center justify-center">
+                                <img src="baicu.jpg" alt="식초" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold mb-2 font-catchy text-orange-600">식초</h3>
+                                <p class="text-sm text-gray-500 mb-3 font-bold">White Vinegar</p>
+                                <p class="text-gray-600 leading-relaxed">산뜻한 산미를 더해줍니다. 감자의 식감을 아삭하게 만듭니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="w-full md:w-1/6">
+                    <div class="bg-white rounded-lg shadow-lg p-6 sticky top-8"> 
+                        <ul class="space-y-4">
+                            <li>
+                                <a href="others_kr.html" class="block text-zinc-700 hover:text-orange-600 hover:underline text-lg font-catchy">
+                                    작가의 한마디
+                                </a>
+                            </li>
+                            <li>
+                                <a href="others-seasoning_kr.html" class="block font-bold text-orange-600 hover:underline text-lg font-catchy">
+                                    사용 조미료
+                                </a>
+                            </li>
+                            <li>
+                                <a href="others-tools_kr.html" class="block text-zinc-700 hover:text-orange-600 hover:underline text-lg font-catchy">
+                                    사용 도구
+                                </a>
+                            </li>
+                            <li>
+                                <a href="others-tips_kr.html" class="block text-zinc-700 hover:text-orange-600 hover:underline text-lg font-catchy">
+                                    요리 팁
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+        </main>
+
+        <footer class="p-4 text-center text-sm text-gray-600 bg-white shadow-inner mt-8">
+            <p>&copy; 2025 Hitori Chuka All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

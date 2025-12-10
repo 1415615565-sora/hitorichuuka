@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家常菜（家庭料理）とは？ | ひとり中華</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="rogo.jpg" type="image/jpeg">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #fdfaf6; 
+            color: #333;
+            margin: 0;
+            overflow: hidden; 
+            height: 100vh;
+            width: 100vw;
+        }
+        .font-catchy {
+            font-family: 'Zen Maru Gothic', serif;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* ページ全体のスライドコンテナ */
+        #slider-container {
+            width: 100%;
+            height: 100vh;
+            transition: transform 1000ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        }
+
+        /* 各セクション */
+        .section-slide {
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* ヘッダー */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 50;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4), transparent);
+        }
+        
+        .bg-overlay {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+        }
+
+        /* 長文スクロール用 */
+        .content-scrollable {
+            max-height: 80vh;
+            overflow-y: auto;
+            width: 100%;
+        }
+        .content-scrollable::-webkit-scrollbar { display: none; }
+        .content-scrollable { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* --- 背景スライドショーの設定 --- */
+        .slideshow-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .slideshow-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: bgSlideShow 20s infinite ease-in-out;
+        }
+        .slide-1 { animation-delay: 0s; }
+        .slide-2 { animation-delay: 5s; }
+        .slide-3 { animation-delay: 10s; }
+        .slide-4 { animation-delay: 15s; }
+
+        @keyframes bgSlideShow {
+            0% { opacity: 0; transform: scale(1.05); z-index: 2;}
+            5% { opacity: 1; }
+            25% { opacity: 1; }
+            30% { opacity: 0; transform: scale(1); z-index: 1;}
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="text-zinc-800">
+    
+    <header class="p-4 md:p-6">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2 group">
+                <img src="rogo.jpg" alt="サイトロゴ" class="h-12 w-12 md:h-14 md:w-14 object-contain bg-white rounded-full p-1 shadow-lg group-hover:scale-105 transition-transform">
+                <span class="hidden sm:block text-2xl font-bold text-white text-shadow font-catchy">ひとり中華</span>
+            </a>
+            <nav>
+                <ul class="flex items-center space-x-6 md:space-x-10">
+                    <li><a href="menu.html" class="text-xl md:text-2xl font-bold text-white hover:text-orange-300 transition duration-300 text-shadow">MENU</a></li>
+                    <li><a href="others.html" class="text-xl md:text-2xl font-bold text-white hover:text-orange-300 transition duration-300 text-shadow">OTHERS</a></li>
+        
+                    <li class="flex items-center space-x-2 text-white font-bold bg-black/20 px-3 py-1 rounded-full backdrop-blur-sm">
+                        <a href="index.html" class="text-orange-300 text-sm">JP</a>
+                        <span class="text-xs opacity-50">|</span>
+                        <a href="index_kr.html" class="hover:text-orange-300 transition text-sm">KR</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="slider-container">
+
+        <section class="section-slide relative text-white">
+            <div class="slideshow-container">
+                <img src="home-egg.png" alt="トマト卵炒め" class="slideshow-image slide-1">
+                <img src="home-pork.png" alt="豚の角煮" class="slideshow-image slide-2">
+                <img src="home-veg.png" alt="青菜炒め" class="slideshow-image slide-3">
+                <img src="home-tofu.png" alt="焼き豆腐" class="slideshow-image slide-4">
+            </div>
+            <div class="bg-overlay"></div>
+            
+            <div class="relative z-10 w-full text-center px-4">
+                <h1 class="font-catchy text-4xl sm:text-5xl md:text-7xl font-black mb-6 tracking-wide text-shadow">
+                    「家常菜」とは？
+                </h1>
+                <p class="text-lg sm:text-xl md:text-2xl font-medium leading-relaxed text-shadow mb-8">
+                    それは、中国の家庭で愛され続ける<br class="hidden sm:block">
+                    素朴で温かい、日常の家庭料理のこと。
+                </p>
+                <div class="animate-bounce mt-12 cursor-pointer" onclick="nextSlide()">
+                    <svg class="w-10 h-10 mx-auto opacity-80 hover:opacity-100 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-slide bg-[#fdfaf6]">
+            <div class="content-scrollable flex justify-center items-center">
+                <div class="max-w-4xl bg-white p-8 md:p-12 rounded-2xl shadow-xl mx-4">
+                    <h2 class="font-catchy text-3xl md:text-4xl font-bold mb-8 text-center text-orange-600">
+                        なぜ、おすすめするのか
+                    </h2>
+                    <div class="space-y-6 text-base md:text-lg leading-loose text-zinc-700">
+                        <p>
+                            家庭料理の最大のメリット、それは<span class="font-bold text-orange-500">「体への優しさ」</span>です。
+                            新鮮な食材を選び、肉と野菜をバランスよく組み合わせる。油や塩分も自分で調整できるため、外食よりも遥かにヘルシーです。
+                        </p>
+                        <p>
+                            中国の家庭料理（家常菜）は、旬の食材を大切にします。
+                            無理な味付けをせず、素材の味を引き出す調理法は、長期的な健康維持に役立ちます。
+                        </p>
+                        <p>
+                            そして何より、キッチンに立ち、自分のために料理をする時間そのものが、
+                            心と体の良いリフレッシュになるのです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-slide relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="banner.jpg" alt="背景" class="w-full h-full object-cover blur-sm opacity-30">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-[#fdfaf6]/90 to-orange-50/90 z-0"></div>
+
+            <div class="container mx-auto px-4 max-w-5xl h-full flex flex-col justify-center relative z-10">
+                <h2 class="font-catchy text-3xl md:text-5xl font-bold mb-16 text-center text-zinc-800">
+                    <span class="border-b-4 border-orange-200 pb-2">韓食との違いは？</span>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-stretch">
+                    
+                    <div class="bg-white/80 backdrop-blur-md p-10 rounded-3xl shadow-lg border border-gray-100 flex flex-col items-center justify-center text-center transform hover:scale-105 transition duration-300 h-64 md:h-80">
+                        <div class="text-5xl mb-6">🇰🇷</div>
+                        <h3 class="font-bold text-xl md:text-2xl text-zinc-500 mb-4">
+                            韓国のスタイル
+                        </h3>
+                        <div class="font-catchy text-4xl md:text-6xl font-black text-zinc-700 tracking-widest">
+                            一汁多菜
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/90 backdrop-blur-md p-10 rounded-3xl shadow-xl border-t-8 border-orange-500 flex flex-col items-center justify-center text-center transform hover:scale-105 transition duration-300 h-64 md:h-80 relative overflow-hidden">
+                        <div class="absolute -right-6 -bottom-6 text-9xl text-orange-100 opacity-40 font-serif z-0 pointer-events-none select-none">食</div>
+                        
+                        <div class="relative z-10">
+                            <div class="text-5xl mb-6">🇨🇳</div>
+                            <h3 class="font-bold text-xl md:text-2xl text-orange-600 mb-4">
+                                中国のスタイル
+                            </h3>
+                            <div class="font-catchy text-4xl md:text-6xl font-black text-zinc-800 tracking-widest">
+                                家常菜
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section-slide bg-orange-50 relative">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 max-w-6xl h-full pb-16"> <div class="w-full md:w-1/2 relative flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute top-4 left-4 w-full h-full border-4 border-orange-200 rounded-lg transform translate-x-2 translate-y-2 z-0"></div>
+                        <img src="recipe-potato.png" alt="家庭料理の例" class="relative z-10 w-full rounded-lg shadow-lg object-cover h-56 md:h-80 transition duration-500 hover:scale-105">
+                    </div>
+                </div>
+                
+                <div class="w-full md:w-1/2 text-left z-10">
+                    <span class="text-orange-500 font-bold tracking-widest text-sm md:text-base">THE TASTE OF HOME</span>
+                    <h2 class="font-catchy text-3xl md:text-5xl font-bold mt-2 mb-6 text-zinc-800">
+                        素朴で、<br>飽きない味。
+                    </h2>
+                    <p class="text-lg text-zinc-600 mb-8 leading-relaxed">
+                        派手な高級中華とは違う、毎日食べても飽きない味。<br>
+                        例えば、ジャガイモの千切り炒め（土豆絲）。<br>
+                        シャキシャキとした食感と、ほんのり香るお酢の風味。<br>
+                        白いご飯があれば、それだけで立派なご馳走になります。
+                    </p>
+                    <a href="menu.html" class="inline-block bg-orange-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-orange-600 transition duration-300 transform hover:-translate-y-1">
+                        レシピを見る
+                    </a>
+                </div>
+            </div>
+
+            <footer class="absolute bottom-0 w-full p-6 text-center text-sm text-gray-500 bg-gray-50 border-t">
+                <p>&copy; 2025 ひとり中華 All Rights Reserved.</p>
+            </footer>
+        </section>
+
+    </main>
+
+    <script>
+        // アニメーション制御用の変数
+        let currentSlide = 0;
+        const container = document.getElementById('slider-container');
+        const slides = document.querySelectorAll('.section-slide');
+        const totalSlides = slides.length;
+        let isAnimating = false;
+
+        function updateSlide() {
+            container.style.transform = `translateY(-${currentSlide * 100}vh)`;
+            isAnimating = true;
+            setTimeout(() => {
+                isAnimating = false;
+            }, 1000); 
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1 && !isAnimating) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0 && !isAnimating) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        window.addEventListener('wheel', (e) => {
+            if (isAnimating) return;
+            if (e.deltaY > 0) nextSlide();
+            else prevSlide();
+        });
+
+        window.addEventListener('keydown', (e) => {
+            if (isAnimating) return;
+            if (e.key === 'ArrowDown') nextSlide();
+            else if (e.key === 'ArrowUp') prevSlide();
+        });
+
+        let touchStartY = 0;
+        window.addEventListener('touchstart', (e) => {
+            touchStartY = e.touches[0].clientY;
+        });
+
+        window.addEventListener('touchend', (e) => {
+            if (isAnimating) return;
+            const touchEndY = e.changedTouches[0].clientY;
+            const diffY = touchStartY - touchEndY;
+            if (Math.abs(diffY) > 50) {
+                if (diffY > 0) nextSlide();
+                else prevSlide();
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요리 팁 | 나홀로 중식</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="rogo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #fdfaf6;
+        }
+        .font-catchy {
+            font-family: 'Gowun Dodum', serif;
+        }
+        .text-shadow-dark {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .banner-image {
+            width: 100%;
+            height: 20vh;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+<body class="min-h-screen text-zinc-800">
+    <div class="min-h-screen flex flex-col">
+
+        <div class="relative">
+            <img src="banner.jpg" alt="배너" class="banner-image">
+            <header class="absolute top-0 left-0 w-full z-10 p-4 md:p-6">
+                <div class="container mx-auto flex items-center">
+                    <a href="index_kr.html" class="flex items-center space-x-2">
+                        <img src="rogo.jpg" alt="로고" class="h-12 w-12 md:h-16 md:w-16 object-contain bg-white rounded-full p-1 shadow-lg">
+                        <span class="hidden sm:block text-2xl font-bold text-white text-shadow-dark font-catchy">나홀로 중식</span>
+                    </a>
+                    <nav class="ml-auto mr-4 md:mr-12 lg:mr-32">
+                        <ul class="flex items-center space-x-6 md:space-x-10">
+                            <li><a href="menu_kr.html" class="text-xl md:text-2xl font-bold text-white hover:text-orange-200 transition duration-300 text-shadow-dark">MENU</a></li>
+                            <li><a href="others_kr.html" class="text-xl md:text-2xl font-bold text-orange-400 hover:text-orange-200 transition duration-300 text-shadow-dark">OTHERS</a></li>
+                            
+                            <li class="flex items-center space-x-2 text-white font-bold bg-black/20 px-3 py-1 rounded-full backdrop-blur-sm">
+                                <a href="others-tips.html" class="hover:text-orange-300 transition text-sm">JP</a>
+                                <span class="text-xs opacity-50">|</span>
+                                <a href="others-tips_kr.html" class="text-orange-300 text-sm">KR</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <main class="flex-grow container mx-auto p-4 md:p-8">
+            <div class="flex flex-col md:flex-row gap-8">
+
+                <div class="w-full md:w-5/6">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl font-bold font-catchy text-zinc-800 mb-4">실패 없는 요리를 위한 5가지 조언</h2>
+                        <p class="text-gray-600">이 기본적인 규칙만 지켜도 요리의 맛이 확 달라집니다.</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4 hover:shadow-lg transition duration-300">
+                            <div class="flex-shrink-0 bg-orange-100 p-3 rounded-full text-orange-600">
+                                <i class="fa-solid fa-temperature-high text-2xl w-8 h-8 flex items-center justify-center"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 font-catchy text-zinc-800">1. 충분한 예열은 필수</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    기름을 넣기 전에 팬을 먼저 뜨겁게 달궈야 합니다. 기름을 넣은 후에도 바로 재료를 넣지 말고, 기름 온도가 올라올 때까지 잠시 기다려주세요.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4 hover:shadow-lg transition duration-300">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full text-blue-600">
+                                <i class="fa-solid fa-droplet-slash text-2xl w-8 h-8 flex items-center justify-center"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 font-catchy text-zinc-800">2. 기름 튐 방지하기</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    재료에 물기가 남아있으면 기름에 넣을 때 튀기 쉽습니다. 물기를 잘 제거하거나, 재료의 양이 기름을 덮을 정도로 충분하다면 덜 튑니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4 hover:shadow-lg transition duration-300">
+                            <div class="flex-shrink-0 bg-green-100 p-3 rounded-full text-green-600">
+                                <i class="fa-solid fa-utensils text-2xl w-8 h-8 flex items-center justify-center"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 font-catchy text-zinc-800">3. 맛보기는 부끄러운 게 아닙니다</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    채소는 오래 볶을 필요가 없습니다. 색깔로 익힘 정도를 판단하는 건 기술이 필요하니, 가장 확실하고 간단한 방법은 직접 맛을 보는 것입니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4 hover:shadow-lg transition duration-300">
+                            <div class="flex-shrink-0 bg-red-100 p-3 rounded-full text-red-600">
+                                <i class="fa-solid fa-fire text-2xl w-8 h-8 flex items-center justify-center"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 font-catchy text-zinc-800">4. 불 조절의 미학</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    불 조절을 익혀야 합니다. 보통 요리가 거의 완성될 즈음에는 중불로 줄여주세요. 불 조절에 신경 쓰지 않으면 순식간에 타버릴 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-md p-6 flex items-start space-x-4 hover:shadow-lg transition duration-300">
+                            <div class="flex-shrink-0 bg-yellow-100 p-3 rounded-full text-yellow-600">
+                                <i class="fa-solid fa-spoon text-2xl w-8 h-8 flex items-center justify-center"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2 font-catchy text-zinc-800">5. 소금은 부족한 듯 넣기</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    소금은 짜게 넣는 것보다 부족한 게 낫습니다(寧缺毋濫). 넣을 때 손이 떨려 과하게 들어가지 않도록 침착하게 조금씩 간을 맞추세요.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <aside class="w-full md:w-1/6">
+                    <div class="bg-white rounded-lg shadow-lg p-6 sticky top-8"> 
+                        <ul class="space-y-4">
+                            <li>
+                                <a href="others_kr.html" class="block text-zinc-700 hover:text-orange-600 hover:underline text-lg font-catchy">
+                                    작가의 한마디
+                                </a>
+                            </li>
+                            <li>
+                                <a href="others-seasoning_kr.html" class="block text-zinc-700 hover:text-orange-600 hover:underline text-lg font-catchy">
+                                    사용 조미료
+                                </a>
+                            </li>
+                            <li>
+                                <a href="others-tools_kr.html" class="block text-zinc-700 hover:text-orange-600 hover:underline text-lg font-catchy">
+                                    사용 도구
+                                </a>
+                            </li>
+                            <li>
+                                <a href="others-tips_kr.html" class="block font-bold text-orange-600 hover:underline text-lg font-catchy">
+                                    요리 팁
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+        </main>
+
+        <footer class="p-4 text-center text-sm text-gray-600 bg-white shadow-inner mt-8">
+            <p>&copy; 2025 Hitori Chuka All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
